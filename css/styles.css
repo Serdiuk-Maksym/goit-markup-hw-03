@@ -40,6 +40,8 @@ body {
   margin: -1px;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ utilities ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 .list {
   margin: 0;
   padding: 0;
@@ -56,20 +58,26 @@ body {
 }
 
 .container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 1158px;
 }
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .header {
 }
 
-.container.header {
+.main-nav {
+  display: flex;
+  align-items: center;
 }
 
 .header-navigation {
+  display: inherit;
+  align-items: inherit;
 }
 
 .header-logo {
@@ -92,15 +100,25 @@ body {
 }
 
 .header-list {
+  display: flex;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 76px;
 }
 
 .header-item {
   list-style-type: none;
 }
 
+.header-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .header-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -118,6 +136,8 @@ body {
 }
 
 .header-address {
+  display: flex;
+  margin-left: auto;
 }
 
 .header-address .list {
@@ -125,11 +145,15 @@ body {
   margin-bottom: 0;
 }
 
-.header-address-item {
+.header-address .item {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   list-style-type: none;
+}
+
+.header-address .item + .item {
+  margin-left: 40px;
 }
 
 .header-address .mail {
@@ -188,20 +212,25 @@ body {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ features ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .features {
+  margin-top: 120px;
   background: var(--background-color);
 }
 
-.container.features {
-  margin-top: 120px;
+.features-main {
 }
 
 .features-list {
+  display: flex;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .features-item {
   list-style-type: none;
+}
+
+.features-item + .features-item {
+  margin-left: 24px;
 }
 
 .features-subtitle {
@@ -240,11 +269,16 @@ body {
 }
 
 .doing-list {
+  display: flex;
   list-style-type: none;
 }
 
 .doing-item {
   margin-top: 72px;
+}
+
+.doing-item + .doing-item {
+  margin-left: 24px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ team ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -258,6 +292,7 @@ body {
 }
 
 .team-title {
+  padding-top: 120px;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -266,7 +301,9 @@ body {
 }
 
 .team-list {
+  display: flex;
   list-style-type: none;
+  padding-bottom: 120px;
 }
 
 .team-item {
@@ -274,10 +311,19 @@ body {
   background-color: var(--background-color);
 }
 
+.team-item + .team-item {
+  margin-left: 24px;
+}
+
 .team-picture {
 }
 
+.team-posinfo {
+  margin: 32px 16px;
+}
+
 .team-subtitle {
+  text-align: center;
   margin-top: 32px;
   font-weight: 500;
   font-size: 20px;
@@ -287,6 +333,7 @@ body {
 }
 
 .team-text {
+  text-align: center;
   margin-top: 8px;
   font-size: 16px;
   line-height: 1.5;
@@ -300,14 +347,21 @@ body {
 }
 
 .filter {
+  display: flex;
+  justify-content: center;
   list-style-type: none;
 }
 
 .container.filter {
-  margin-top: 168px;
+  margin-top: 96px;
+}
+
+.container .item:not(:last-child) {
+  margin-right: 24px;
 }
 
 .filter-btn {
+  padding: 12px 24px;
   font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
@@ -317,6 +371,7 @@ body {
   color: var(--primary-brand-color);
   background-color: var(--light-color);
   border: 1px solid var(--accent-color);
+  border-radius: 4px;
 }
 
 .filter-btn:hover {
@@ -325,8 +380,29 @@ body {
   border-width: 0;
 }
 
+.portlist {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .portfolio-list {
+  display: inherit;
+  flex-wrap: inherit;
   list-style-type: none;
+}
+
+.portfolio-list .item {
+  /* alternative margin-right ~~~ width: calc((100%-48) / 3); */
+  margin-right: 24px;
+  margin-bottom: 48px;
+}
+
+.portfolio-list .item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.portfolio-list .item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
 }
 
 .container.portlist {
@@ -357,9 +433,13 @@ body {
 }
 
 .container.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0px;
 }
 
 .footer-logo {
+  display: flex;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -379,6 +459,8 @@ body {
 }
 
 .footer-text {
+  display: flex;
+  width: 264px;
   margin-top: 16px;
   font-size: 16px;
   line-height: 1.5;

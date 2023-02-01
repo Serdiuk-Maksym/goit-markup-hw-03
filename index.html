@@ -13,13 +13,20 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container header">
+      <div class="container header main-nav">
         <nav class="header-navigation">
           <a class="header-logo" href="./index.html"
             ><span class="header-logo-span">WEB</span>STUDIO</a
@@ -38,12 +45,12 @@
         </nav>
         <address class="header-address">
           <ul class="header-address list">
-            <li class="header-address-item">
+            <li class="item">
               <a class="mail" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="header-address-item">
+            <li class="item">
               <a class="tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
             </li>
           </ul>
@@ -60,7 +67,7 @@
       </section>
 
       <section class="features">
-        <div class="container features">
+        <div class="container features-main">
           <h2 hidden class="visually-hidden title">features</h2>
           <ul class="features-list list">
             <li class="features-item">
@@ -135,8 +142,10 @@
                 alt="photo Mark Guerrero"
                 width="264"
               />
-              <h3 class="team-subtitle title">Mark Guerrero</h3>
-              <p class="team-text text">Product Designer</p>
+              <div class="team-posinfo">
+                <h3 class="team-subtitle title">Mark Guerrero</h3>
+                <p class="team-text text">Product Designer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -145,8 +154,10 @@
                 alt="photo Tom Ford"
                 width="264"
               />
-              <h3 class="team-subtitle title">Tom Ford</h3>
-              <p class="team-text text">Frontend Developer</p>
+              <div class="team-posinfo">
+                <h3 class="team-subtitle title">Tom Ford</h3>
+                <p class="team-text text">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -155,8 +166,10 @@
                 alt="photo Camila Garcia"
                 width="264"
               />
-              <h3 class="team-subtitle title">Camila Garcia</h3>
-              <p class="team-text text">Marketing</p>
+              <div class="team-posinfo">
+                <h3 class="team-subtitle title">Camila Garcia</h3>
+                <p class="team-text text">Marketing</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -165,8 +178,10 @@
                 alt="photo Daniel Wilson"
                 width="264"
               />
-              <h3 class="team-subtitle title">Daniel Wilson</h3>
-              <p class="team-text text">UI Designer</p>
+              <div class="team-posinfo">
+                <h3 class="team-subtitle title">Daniel Wilson</h3>
+                <p class="team-text text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
