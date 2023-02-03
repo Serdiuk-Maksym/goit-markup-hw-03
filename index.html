@@ -18,10 +18,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -31,7 +27,7 @@
           <a class="header-logo" href="./index.html"
             ><span class="header-logo-span">WEB</span>STUDIO</a
           >
-          <ul class="header-list list">
+          <ul class="header-list">
             <li class="header-item">
               <a class="header-link current" href="./index.html">Studio</a>
             </li>
@@ -44,7 +40,7 @@
           </ul>
         </nav>
         <address class="header-address">
-          <ul class="header-address list">
+          <ul class="header-address">
             <li class="item">
               <a class="mail" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -60,40 +56,38 @@
 
     <main>
       <section class="hero">
-        <h1 class="hero-title title">
-          Effective Solutions<br />for Your Business
-        </h1>
+        <h1 class="hero-title">Effective Solutions<br />for Your Business</h1>
         <button class="hero-btn" type="button">Order Service</button>
       </section>
 
       <section class="features">
         <div class="container features-main">
-          <h2 hidden class="visually-hidden title">features</h2>
-          <ul class="features-list list">
+          <h2 hidden class="visually-hidden">features</h2>
+          <ul class="features-list">
             <li class="features-item">
-              <h3 class="features-subtitle title">Strategy</h3>
-              <p class="features-text text">
+              <h3 class="features-subtitle">Strategy</h3>
+              <p class="features-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
             <li class="features-item">
-              <h3 class="features-subtitle title">Punctuality</h3>
-              <p class="features-text text">
+              <h3 class="features-subtitle">Punctuality</h3>
+              <p class="features-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
             <li class="features-item">
-              <h3 class="features-subtitle title">Diligence</h3>
-              <p class="features-text text">
+              <h3 class="features-subtitle">Diligence</h3>
+              <p class="features-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
             <li class="features-item">
-              <h3 class="features-subtitle title">Technologies</h3>
-              <p class="features-text text">
+              <h3 class="features-subtitle">Technologies</h3>
+              <p class="features-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -103,28 +97,34 @@
       </section>
 
       <section class="doing">
-        <div class="container doing">
-          <h2 class="doing-title title">What are we doing</h2>
-          <ul class="doing-list list">
+        <div class="container">
+          <h2 class="doing-title">What are we doing</h2>
+          <ul class="doing-list">
             <li class="doing-item">
               <img
+                class="doing-img"
                 src="./images/example1.jpg"
                 alt="example of a company product 1"
                 width="360"
+                height="300"
               />
             </li>
             <li class="doing-item">
               <img
+                class="doing-img"
                 src="./images/example2.jpg"
                 alt="example of a company product 2"
                 width="360"
+                height="300"
               />
             </li>
             <li class="doing-item">
               <img
+                class="doing-img"
                 src="./images/example3.jpg"
                 alt="example of a company product 3"
                 width="360"
+                height="300"
               />
             </li>
           </ul>
@@ -132,9 +132,9 @@
       </section>
 
       <section class="team">
-        <div class="container team">
-          <h2 class="team-title title">Our Team</h2>
-          <ul class="team-list list">
+        <div class="container">
+          <h2 class="team-title">Our Team</h2>
+          <ul class="team-list">
             <li class="team-item">
               <img
                 class="team-picture"
@@ -143,8 +143,8 @@
                 width="264"
               />
               <div class="team-posinfo">
-                <h3 class="team-subtitle title">Mark Guerrero</h3>
-                <p class="team-text text">Product Designer</p>
+                <h3 class="team-subtitle">Mark Guerrero</h3>
+                <p class="team-text">Product Designer</p>
               </div>
             </li>
             <li class="team-item">
@@ -155,8 +155,8 @@
                 width="264"
               />
               <div class="team-posinfo">
-                <h3 class="team-subtitle title">Tom Ford</h3>
-                <p class="team-text text">Frontend Developer</p>
+                <h3 class="team-subtitle">Tom Ford</h3>
+                <p class="team-text">Frontend Developer</p>
               </div>
             </li>
             <li class="team-item">
@@ -167,8 +167,8 @@
                 width="264"
               />
               <div class="team-posinfo">
-                <h3 class="team-subtitle title">Camila Garcia</h3>
-                <p class="team-text text">Marketing</p>
+                <h3 class="team-subtitle">Camila Garcia</h3>
+                <p class="team-text">Marketing</p>
               </div>
             </li>
             <li class="team-item">
@@ -179,8 +179,8 @@
                 width="264"
               />
               <div class="team-posinfo">
-                <h3 class="team-subtitle title">Daniel Wilson</h3>
-                <p class="team-text text">UI Designer</p>
+                <h3 class="team-subtitle">Daniel Wilson</h3>
+                <p class="team-text">UI Designer</p>
               </div>
             </li>
           </ul>
@@ -189,11 +189,11 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer">
+      <div class="container">
         <a class="footer-logo" href="./index.html">
           <span class="footer-logo-span">WEB</span>STUDIO</a
         >
-        <p class="footer-text text">
+        <p class="footer-text">
           Increase the flow of customers and sales for your business with
           digital marketing & growth solutions.
         </p>
