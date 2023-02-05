@@ -180,6 +180,7 @@ img {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ hero ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .hero {
+  padding: 188px 0;
   text-align: center;
   background-color: var(--titl-color);
 }
@@ -262,11 +263,8 @@ img {
 .doing-list {
   display: flex;
   list-style: none;
-  gap: 24px;
-}
-
-.doing-item {
   margin-top: 72px;
+  gap: 24px;
 }
 
 .doing-img {
@@ -292,11 +290,11 @@ img {
 .team-list {
   display: flex;
   list-style: none;
+  margin-top: 72px;
   gap: 24px;
 }
 
 .team-item {
-  margin-top: 72px;
   background: var(--background-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -338,7 +336,6 @@ img {
   display: flex;
   justify-content: center;
   list-style: none;
-  padding-bottom: 72px;
   gap: 24px;
 }
 
@@ -368,6 +365,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  margin-top: 72px;
   column-gap: 24px;
   row-gap: 48px;
 }
@@ -381,13 +379,13 @@ img {
 .portfolio-box {
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-left: 16px;
   border-right: 1px solid var(--accent-color);
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
 }
 
 .list-subtitle {
-  padding-left: 16px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -396,7 +394,6 @@ img {
 }
 
 .list-text {
-  padding-left: 16px;
   margin-top: 8px;
   font-size: 16px;
   line-height: 1.5;
